@@ -1,0 +1,11 @@
+pipeline{
+    agent any{
+        stages{
+            stage('Restore dependancies'){
+                steps{
+                    bat'dot net restore'
+                }
+            }
+        }
+    }
+}
